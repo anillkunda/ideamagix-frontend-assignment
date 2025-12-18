@@ -36,10 +36,14 @@ html {
   /* 10px / 16px = 0.625 = 62.5 */
   /* percentage of user's browser font-size setting; */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--helvetica);
   line-height: 1;
   color: var(--text-white);
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }

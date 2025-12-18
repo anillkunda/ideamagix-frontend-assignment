@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/public/favicon.png" />
 
@@ -12,6 +23,28 @@
     <title>Daisy Murillo</title>
   </head>
   <body>
+    <header class="header">
+      <div class="navbar">
+        <a href="#">
+          <img src="assets/images/logo.png" alt="Daisy logo" class="logo" />
+        </a>
+
+        <div class="nav-wrap">
+          <nav class="nav-menu">
+            <a href="#" class="nav-link nav-active">Home.</a>
+            <a href="#" class="nav-link">About.</a>
+            <a href="#" class="nav-link">Projects.</a>
+            <a href="#" class="nav-link">Contacts.</a>
+          </nav>
+        </div>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
     <!-- ** Hero Section -->
     <section class="section-hero">
       <div class="container hero">
