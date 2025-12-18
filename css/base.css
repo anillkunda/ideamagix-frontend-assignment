@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/public/font/HELVETICASCHOOL.TTF') format('TTF');
+}
+
+/* CSS variables for reusability across all files. */
+:root {
+  --helvetica: 'Helvetica', sans-serif;
+
+  --primary-purple: #980ef9;
+  --secondary-purple: #675ef9;
+  --primary-cyan: #1fd0fa;
+  --secondary-blue: #4397fa;
+
+  --bg-darkest: #0c0d0f;
+  --bg-dark: #151515;
+  --bg-surface: #242424;
+
+  --text-white: #ffffff;
+  --text-muted-light: #b3b3b3;
+  --text-muted-dark: #6b6b6b;
+
+  --tag-ios: #a5c9ff;
+  --tag-android: #e0b0ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5 */
+  /* percentage of user's browser font-size setting; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--helvetica);
+  line-height: 1;
+  color: var(--text-white);
+}
