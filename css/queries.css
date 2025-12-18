@@ -1,0 +1,103 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/* --- Below 1344px (Smaller Desktops) */
+
+@media (max-width: 84em) {
+  .section-hero {
+    padding: 10rem 0 10rem 7rem;
+  }
+}
+
+/* --- Below 1200px (Landscape Tablets) */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+
+  .heading-primary {
+    font-size: 10rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+}
+
+/* --- Below 944px (Tablets) */
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .section-hero {
+    padding: 10rem 0;
+  }
+
+  .hero {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 10rem;
+    text-align: center;
+  }
+
+  .hero-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading-primary {
+    font-size: 15rem;
+  }
+
+  .hero-description {
+    font-size: 2.5rem;
+    width: 70%;
+  }
+
+  .arrow-img {
+    width: 7rem;
+    height: 7rem;
+    margin-left: 1rem;
+    transform: rotate(90deg);
+  }
+}
+
+/* --- Below 704px (Smaller Tablets) */
+
+@media (max-width: 44em) {
+  .hero {
+    gap: 7rem;
+  }
+
+  .heading-primary {
+    font-size: 10rem;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+    width: 85%;
+  }
+
+  .arrow-img {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+  }
+}
+
+/* --- Below 544px (Phones) */
+
+@media (max-width: 34em) {
+}
