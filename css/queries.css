@@ -24,8 +24,9 @@
   }
 
   .about-description {
-    font-size: 1.7rem;
-    width: 80%;
+    font-size: 2rem;
+    line-height: 1.2;
+    width: 100%;
   }
 
   .features {
@@ -34,6 +35,10 @@
 
   .feature p {
     width: 100%;
+  }
+
+  .project-arrow-img {
+    margin-left: -1rem;
   }
 }
 
@@ -110,6 +115,10 @@
     margin-left: 1rem;
   }
 
+  .subheading {
+    font-size: 1.8rem;
+  }
+
   .section-about {
     padding: 10rem 5rem;
   }
@@ -129,7 +138,8 @@
     font-size: 12rem;
   }
 
-  .about-description {
+  .about-description,
+  .project-description {
     font-size: 2.5rem;
     width: 75%;
   }
@@ -154,6 +164,22 @@
   .features {
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 3rem;
+  }
+
+  .section-projects {
+    padding: 10rem 5rem;
+  }
+
+  .project-arrow-img {
+    margin-left: -1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card:nth-child(even) {
+    margin-top: 0;
   }
 
   .line-clamp {
@@ -275,16 +301,25 @@
   .section-about {
     padding: 10rem 2.5rem;
   }
+
+  .section-projects {
+    padding: 10rem 3.4rem;
+  }
+
+  .project-arrow-img {
+    margin-left: -1rem;
+  }
 }
 
 /* --- Below 544px (Phones) */
 
 @media (max-width: 34em) {
   .heading-secondary {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 
-  .about-description {
+  .about-description,
+  .project-description {
     font-size: 1.5rem;
     font-weight: 200;
     line-height: 1.5;
