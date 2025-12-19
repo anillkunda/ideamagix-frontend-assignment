@@ -170,7 +170,8 @@
     padding: 10rem 5rem;
   }
 
-  .project-arrow-img {
+  .project-arrow-img,
+  .contact-arrow-img {
     margin-left: -1rem;
   }
 
@@ -180,6 +181,41 @@
 
   .project-card:nth-child(even) {
     margin-top: 0;
+  }
+
+  .section-contact {
+    background-color: var(--bg-dark);
+    padding: 10rem 10rem 5rem 10rem;
+    position: relative;
+  }
+
+  .contacts-bg-img-wrap {
+    top: 1rem;
+    right: -1rem;
+  }
+
+  .heading-tertiary {
+    font-size: 8rem;
+    font-weight: 700;
+  }
+
+  .contact-arrow-img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .social-icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .form-group label {
+    font-size: 2.2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 3.5rem;
   }
 
   .line-clamp {
@@ -307,7 +343,41 @@
   }
 
   .project-arrow-img {
-    margin-left: -1rem;
+    margin-left: 1rem;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .section-contact {
+    background-color: var(--bg-dark);
+    padding: 10rem 2rem 5rem 2rem;
+    position: relative;
+  }
+
+  .heading-tertiary {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  .contact-arrow-img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .social-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .form-group label {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 2.5rem;
   }
 }
 
