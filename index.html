@@ -31,10 +31,10 @@
 
         <div class="nav-wrap">
           <nav class="nav-menu">
-            <a href="#" class="nav-link nav-active">Home.</a>
-            <a href="#" class="nav-link">About.</a>
-            <a href="#" class="nav-link">Projects.</a>
-            <a href="#" class="nav-link">Contacts.</a>
+            <a href="#home" class="nav-link nav-link--active">Home.</a>
+            <a href="#about" class="nav-link">About.</a>
+            <a href="#projects" class="nav-link">Projects.</a>
+            <a href="#contacts" class="nav-link">Contacts.</a>
           </nav>
         </div>
 
@@ -47,32 +47,32 @@
 
     <main>
       <!-- ** Hero Section -->
-      <section class="section-hero">
-        <div class="container hero">
+      <section class="section-hero" id="home">
+        <div class="hero-container">
           <div class="hero-text-wrap">
             <div class="hero-intro-wrap">
-              <span class="purple-line"></span>
+              <span class="purple-light-line"></span>
               <span class="subheading">I am</span>
             </div>
             <h1 class="heading-primary">
               Daisy <br />
-              <span class="purple-highlight"
+              <span class="purple-light-highlight"
                 >Murillo
                 <span
                   ><img
-                    class="arrow-img"
-                    src="./assets/images/arrow-purple.png"
+                    class="purple-light-arrow-img"
+                    src="./assets/images/arrow-purple-light.png"
                     alt="Purple arrow image" /></span
               ></span>
             </h1>
-            <p class="hero-description">
+            <p class="hero-description line-clamp-3">
               I am a computer science student and I work as an Infrastructure
               engineer. I'm passionate about technology especially about
               software industry.
             </p>
           </div>
 
-          <div class="hero-img-wrap">
+          <div class="hero-img-container">
             <img
               src="/assets/images/hero-img.png"
               alt="Portrait of Daisy Murillo."
@@ -83,46 +83,46 @@
       </section>
 
       <!-- ** About Section -->
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="about-img-wrap">
           <img src="assets/images/About-Me.png" alt="Solid purple background" />
         </div>
 
-        <div class="about">
-          <div class="about-wrap">
+        <div class="about-container">
+          <div class="about-header">
             <div class="about-intro-wrap">
-              <span class="purple-l-line"></span>
+              <span class="purple-dark-line"></span>
               <span class="subheading">Something</span>
             </div>
 
             <h1 class="heading-secondary">
               About<br />
-              <span class="purple-l-highlight"
+              <span class="purple-dark-highlight"
                 >Me
                 <span
                   ><img
-                    class="arrow-img"
-                    src="./assets/images/arrow-purple-l.png"
+                    class="purple-dark-arrow-img"
+                    src="./assets/images/arrow-purple-dark.png"
                     alt="Purple-Light arrow image" /></span
               ></span>
             </h1>
-            <p class="about-description">
+            <p class="about-description line-clamp-3">
               I am a computer science student and I work as an Infrastructure
               engineer. I'm passionate about technology especially about
               software industry.
             </p>
           </div>
 
-          <div class="stats">
-            <div class="stat-card">
+          <div class="about-stats">
+            <div class="about-stat-card">
               <h2>3+</h2>
               <p>Years of Experience</p>
             </div>
-            <div class="stat-card">
+            <div class="about-stat-card">
               <h2>230+</h2>
               <p>Projects Completed</p>
             </div>
-            <div class="stat-card">
+            <div class="about-stat-card">
               <h2>7</h2>
               <p>Particular Skills</p>
             </div>
@@ -131,8 +131,8 @@
 
         <div class="divider"></div>
 
-        <div class="features">
-          <div class="feature">
+        <div class="about-features">
+          <div class="about-feature">
             <img
               class="feature-image"
               src="assets/images/Coding-Enthusiasist.png"
@@ -145,7 +145,7 @@
             </p>
           </div>
 
-          <div class="feature">
+          <div class="about-feature">
             <img
               class="feature-image"
               src="assets/images/Infrastructure-Expert.png"
@@ -158,10 +158,10 @@
             </p>
           </div>
 
-          <div class="feature">
+          <div class="about-feature">
             <img
               class="feature-image"
-              src="assets/images/web-Master.png"
+              src="assets/images/web-master.png"
               alt="Web Master"
             />
             <h3 class="line-clamp-1">Web Master</h3>
@@ -173,9 +173,9 @@
         </div>
       </section>
 
-      <!-- ** Projects Section -->
-      <section class="section-projects">
-        <div class="projects-bg-img-wrap">
+      <!-- ** Project Section -->
+      <section class="section-projects" id="projects">
+        <div class="project-bg-img-wrap">
           <img src="assets/images/Projects.png" alt="Solid blue background" />
         </div>
 
@@ -188,19 +188,19 @@
           <h1 class="heading-secondary">
             Projects
             <img
-              class="arrow-img project-arrow-img"
+              class="cyan-arrow-img"
               src="./assets/images/arrow-cyan.png"
               alt="Cyan arrow image"
             />
           </h1>
-          <p class="project-description">
+          <p class="project-description line-clamp-3">
             I am a computer science student and I work as an Infrastructure
             engineer. I'm passionate about technology especially about software
             industry.
           </p>
         </div>
 
-        <div class="projects-grid">
+        <div class="project-grid">
           <div class="project-card" style="margin-top: 6rem">
             <div class="brand-logo">
               <img src="assets/images/Tesla.png" alt="Tesla" />
@@ -251,7 +251,7 @@
             </p>
             <div class="tags-wrap">
               <button class="tag tag-ios">IOS APP</button>
-              <button class="tag tag-android">INFRASTRUCTURE</button>
+              <button class="tag tag-infra">INFRASTRUCTURE</button>
             </div>
           </div>
 
@@ -275,21 +275,22 @@
         </div>
       </section>
 
-      <!-- ** Contacts Section -->
-      <section class="section-contact">
-        <div class="contacts-bg-img-wrap">
+      <!-- ** Contact Section -->
+      <section class="section-contact" id="contacts">
+        <div class="contact-bg-img-wrap">
           <img src="assets/images/Contacts.png" alt="Solid blue background" />
         </div>
-        <div class="header-grid">
-          <div>
-            <div class="project-intro-wrap">
+
+        <div class="contact-header-grid">
+          <div class="contact-header">
+            <div class="contact-intro-wrap">
               <span class="blue-line"></span>
             </div>
 
             <h1 class="heading-tertiary">
               Contacts
               <img
-                class="contact-arrow-img"
+                class="blue-arrow-img"
                 src="./assets/images/arrow-blue.png"
                 alt="Blue arrow image"
               />
@@ -297,35 +298,30 @@
           </div>
 
           <div class="social-icons">
-            <i class="fab fa-instagram">
-              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-            </i>
-            <i class="fab fa-twitter">
-              <ion-icon class="social-icon" name="logo-github"></ion-icon>
-            </i>
-            <i class="fab fa-discord">
-              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-            </i>
-            <i class="fab fa-github">
-              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-            </i>
+            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+
+            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+
+            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+
+            <ion-icon class="social-icon" name="logo-github"></ion-icon>
           </div>
         </div>
 
         <form class="contact-form">
           <div class="form-group">
             <label>First Name</label>
-            <input type="text" placeholder="Buenos" />
+            <input type="text" placeholder="Daisy" />
           </div>
 
           <div class="form-group">
             <label>Last Name</label>
-            <input type="text" placeholder="Almiron" />
+            <input type="text" placeholder="Murillo" />
           </div>
 
           <div class="form-group">
             <label>Mail</label>
-            <input type="email" placeholder="buenosalmiron@hotmail.com" />
+            <input type="email" placeholder="daisymurillo@gmail.com" />
           </div>
 
           <div class="form-group">
@@ -342,7 +338,7 @@
         </form>
 
         <div class="footer">
-          <p>&copy; Copyright 2021 Daisy Murillo. All rights reserved.</p>
+          <p>&copy; Copyright 2025 Daisy Murillo. All rights reserved.</p>
         </div>
       </section>
     </main>

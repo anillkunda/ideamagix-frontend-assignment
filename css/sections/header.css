@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  max-width: 162rem;
+  max-width: 155rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 
@@ -39,7 +39,7 @@
   text-decoration: none;
 }
 
-.nav-active {
+.nav-link--active {
   color: var(--text-white);
 }
 

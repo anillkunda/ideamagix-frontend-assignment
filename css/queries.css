@@ -3,15 +3,20 @@
 /* --- Below 1344px (Smaller Desktops) */
 
 @media (max-width: 84em) {
-  .section-hero {
-    padding: 10rem 0 10rem 7rem;
-  }
-
   .navbar {
-    max-width: 122rem;
+    max-width: 115rem;
   }
 
-  .about {
+  .heading-primary {
+    font-size: 12rem;
+  }
+
+  .heading-secondary,
+  .heading-tertiary {
+    font-size: 8rem;
+  }
+
+  .about-container {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
     align-items: center;
@@ -19,26 +24,25 @@
     gap: 2rem;
   }
 
-  .heading-secondary {
-    font-size: 7rem;
-  }
-
   .about-description {
-    font-size: 2rem;
-    line-height: 1.2;
     width: 100%;
   }
 
-  .features {
+  .about-features {
     gap: 2.5rem;
   }
 
-  .feature p {
+  .about-feature p {
     width: 100%;
   }
 
-  .project-arrow-img {
-    margin-left: -1rem;
+  .form-group label {
+    font-size: 1.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 2.8rem;
   }
 }
 
@@ -58,16 +62,7 @@
     font-size: 10rem;
   }
 
-  .hero-description {
-    font-size: 1.8rem;
-    width: 100%;
-  }
-
-  .hero-img {
-    width: 100%;
-  }
-
-  .stats {
+  .about-stats {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2.4rem;
   }
@@ -81,16 +76,29 @@
     font-size: 50%;
   }
 
+  .subheading {
+    font-size: 1.8rem;
+  }
+
+  .heading-primary {
+    font-size: 13rem;
+  }
+
+  .heading-secondary,
+  .heading-tertiary {
+    font-size: 10rem;
+  }
+
+  .line-clamp {
+    -webkit-line-clamp: 2;
+  }
+
   .section-hero {
     padding: 10rem 0;
   }
 
-  .hero {
-    display: grid;
-
+  .hero-container {
     grid-template-columns: 1fr;
-    gap: 10rem;
-    text-align: center;
   }
 
   .hero-text-wrap {
@@ -100,23 +108,9 @@
     text-align: center;
   }
 
-  .heading-primary {
-    font-size: 15rem;
-  }
-
   .hero-description {
     font-size: 2.5rem;
     width: 70%;
-  }
-
-  .arrow-img {
-    width: 7rem;
-    height: 7rem;
-    margin-left: 1rem;
-  }
-
-  .subheading {
-    font-size: 1.8rem;
   }
 
   .section-about {
@@ -129,53 +123,52 @@
     transform: rotate(180deg);
   }
 
-  .about {
+  .about-container {
     grid-template-columns: 1fr;
     gap: 4rem;
   }
 
-  .heading-secondary {
-    font-size: 12rem;
-  }
-
-  .about-description,
-  .project-description {
+  .about-description {
     font-size: 2.5rem;
     width: 75%;
   }
 
-  .stats {
+  .about-stats {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2.4rem;
   }
 
-  .stat-card {
+  .about-stat-card {
     padding: 6rem 3rem;
   }
 
-  .stat-card h2 {
-    font-size: 5rem;
+  .about-stat-card h2 {
+    font-size: 4rem;
   }
 
-  .features {
+  .about-stat-card p {
+    font-size: 1.5rem;
+  }
+
+  .about-features {
     padding: 0;
   }
 
-  .features {
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    gap: 3rem;
+  .about-features {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2.4rem;
   }
 
   .section-projects {
     padding: 10rem 5rem;
   }
 
-  .project-arrow-img,
-  .contact-arrow-img {
-    margin-left: -1rem;
+  .project-description {
+    font-size: 2.5rem;
+    width: 75%;
   }
 
-  .projects-grid {
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
@@ -184,24 +177,12 @@
   }
 
   .section-contact {
-    background-color: var(--bg-dark);
-    padding: 10rem 10rem 5rem 10rem;
-    position: relative;
+    padding: 12rem 5rem 5rem 5rem;
   }
 
   .contacts-bg-img-wrap {
-    top: 1rem;
+    top: -10rem;
     right: -1rem;
-  }
-
-  .heading-tertiary {
-    font-size: 8rem;
-    font-weight: 700;
-  }
-
-  .contact-arrow-img {
-    width: 5rem;
-    height: 5rem;
   }
 
   .social-icon {
@@ -215,15 +196,7 @@
 
   .form-group input,
   .form-group textarea {
-    font-size: 3.5rem;
-  }
-
-  .line-clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 3.2rem;
   }
 
   /* --- Mobile Navigation */
@@ -294,7 +267,7 @@
     font-size: 3rem;
   }
 
-  .nav-active {
+  .nav-link--active {
     color: var(--text-muted-dark);
   }
 
@@ -306,32 +279,50 @@
 /* --- Below 704px (Smaller Tablets) */
 
 @media (max-width: 44em) {
+  .heading-primary {
+    font-size: 10rem;
+  }
+
+  .heading-secondary,
+  .heading-tertiary {
+    font-size: 7rem;
+  }
+
+  .purple-light-arrow-img {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+  }
+
+  .purple-dark-arrow-img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .cyan-arrow-img,
+  .blue-arrow-img {
+    width: 3rem;
+    height: 3rem;
+
+    margin-left: -0.5rem;
+  }
+
   .logo {
-    width: 3.5rem;
+    width: 4rem;
   }
 
   .icon-mobile-nav {
-    height: 4.8rem;
-    width: 4.8rem;
+    height: 5rem;
+    width: 5rem;
   }
 
-  .hero {
+  .hero-container {
     gap: 7rem;
-  }
-
-  .heading-primary {
-    font-size: 10rem;
   }
 
   .hero-description {
     font-size: 1.5rem;
     width: 85%;
-  }
-
-  .arrow-img {
-    width: 5rem;
-    height: 5rem;
-    margin-left: 1rem;
   }
 
   .section-about {
@@ -342,23 +333,8 @@
     padding: 10rem 3.4rem;
   }
 
-  .project-arrow-img {
-    margin-left: 1rem;
-  }
-
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-
   .section-contact {
-    background-color: var(--bg-dark);
     padding: 10rem 2rem 5rem 2rem;
-    position: relative;
-  }
-
-  .heading-tertiary {
-    font-size: 5rem;
-    font-weight: 700;
   }
 
   .contact-arrow-img {
@@ -366,35 +342,51 @@
     height: 3rem;
   }
 
+  .contact-bg-img-wrap {
+    position: absolute;
+    top: -7rem;
+    right: -0.5rem;
+
+    transform: scaleX(-1);
+  }
+
+  .contact-bg-img-wrap img {
+    width: 9rem;
+  }
+
   .social-icon {
     height: 3rem;
     width: 3rem;
   }
 
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
   .form-group label {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .form-group input,
   .form-group textarea {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 
 /* --- Below 544px (Phones) */
 
 @media (max-width: 34em) {
-  .heading-secondary {
+  .heading-primary {
     font-size: 7rem;
   }
 
   .about-description,
   .project-description {
-    font-size: 1.5rem;
-    font-weight: 200;
-    line-height: 1.5;
-    color: var(--text-muted-light);
-
-    width: 80%;
+    font-size: 1.8rem;
+    width: 90%;
   }
 }

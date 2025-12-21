@@ -4,13 +4,13 @@
   position: relative;
 }
 
-.projects-bg-img-wrap {
+.project-bg-img-wrap {
   position: absolute;
   top: 20rem;
   right: -1rem;
 }
 
-.projects-bg-img-wrap img {
+.project-bg-img-wrap img {
   width: 9rem;
 }
 
@@ -18,11 +18,12 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+
   margin-bottom: 0.5rem;
 }
 
 .cyan-line {
-  width: 80px;
+  width: 10rem;
   height: 2px;
   background-color: var(--primary-cyan);
 }
@@ -32,26 +33,30 @@
   font-weight: 700;
 }
 
+.cyan-arrow-img {
+  width: 5rem;
+  height: 5rem;
+
+  margin-left: -1.8rem;
+}
+
 .project-description {
   font-size: 2rem;
   font-weight: 200;
-  line-height: 1.2;
+  line-height: 1.4;
   color: var(--text-muted-light);
 
   margin-top: 1.4rem;
   width: 40%;
 }
 
-.project-arrow-img {
-  margin-left: -2.2rem;
-}
-
-.projects-grid {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 10rem;
-  row-gap: 6rem;
   align-items: start;
+
+  row-gap: 6rem;
+  column-gap: 10rem;
 }
 
 /* Stagger effect: Offset the second column upwards */
@@ -60,10 +65,11 @@
 }
 
 .project-card {
-  background-color: var(--bg-darkest);
-  border: 1px solid var(--secondary-blue);
-  border-radius: 2.4rem;
   padding: 3rem;
+  border-radius: 2.4rem;
+  border: 1px solid var(--secondary-blue);
+  background-color: var(--bg-darkest);
+
   position: relative;
 }
 
@@ -73,14 +79,15 @@
   right: -3rem;
   width: 7rem;
   height: 7rem;
-  background: var(--bg-darkest);
-  border: 1px solid var(--secondary-blue);
+  padding: 1.5rem;
   border-radius: 50%;
+  border: 1px solid var(--secondary-blue);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: var(--bg-darkest);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .brand-logo img {
@@ -107,7 +114,7 @@
 }
 
 .project-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--text-muted-light);
   margin-bottom: 3rem;
 }
@@ -118,11 +125,12 @@
 }
 
 .tag {
-  padding: 1.2rem 2rem;
-  border-radius: 0.8rem;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
+
+  padding: 1.2rem 2rem;
+  border-radius: 0.8rem;
   border: none;
   cursor: pointer;
 }
@@ -131,7 +139,8 @@
   background-color: var(--tag-ios);
   color: var(--secondary-blue);
 }
-.tag-android {
+.tag-android,
+.tag-infra {
   background-color: var(--tag-android);
   color: var(--primary-purple);
 }

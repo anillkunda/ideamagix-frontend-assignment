@@ -1,6 +1,6 @@
 .section-contact {
   background-color: var(--bg-dark);
-  padding: 10rem 10rem;
+  padding: 10rem 10rem 5rem 10rem;
   position: relative;
 
   display: flex;
@@ -8,45 +8,45 @@
   justify-content: center;
 }
 
-.contacts-bg-img-wrap {
+.contact-bg-img-wrap {
   position: absolute;
   top: -12rem;
   left: 1rem;
 }
 
-.contacts-bg-img-wrap img {
+.contact-bg-img-wrap img {
   width: 11rem;
 }
 
-.header-grid {
+.contact-header-grid {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
   margin-bottom: 6rem;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.project-intro-wrap {
+.contact-intro-wrap {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 0.5rem;
+
+  margin-bottom: 1.5rem;
 }
 
 .blue-line {
-  width: 80px;
+  width: 10rem;
   height: 2px;
   background-color: var(--secondary-blue);
 }
 
-.heading-tertiary {
-  font-size: 10rem;
-  font-weight: 700;
-}
+.blue-arrow-img {
+  width: 5rem;
+  height: 5rem;
 
-.project-arrow-img {
-  margin-left: -2.2rem;
+  margin-left: -1.8rem;
 }
 
 .social-icons {
@@ -57,8 +57,8 @@
 }
 
 .social-icon {
-  height: 3.8rem;
-  width: 3.8rem;
+  height: 3.7rem;
+  width: 3.7rem;
   cursor: pointer;
   transition: color 0.3s, transform 0.3s;
   color: var(--text-white);
@@ -92,13 +92,14 @@
 
 .form-group input,
 .form-group textarea {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #3e3e3e;
+  font-size: 2.3rem;
   color: var(--text-white);
+  background: transparent;
+
   padding: 1rem 0;
-  font-size: 2.5rem;
   outline: none;
+  border: none;
+  border-bottom: 1px solid var(--text-muted-darker);
   transition: border-color 0.3s;
 }
 
@@ -113,59 +114,21 @@
 }
 
 .submit-btn {
-  background-color: var(--secondary-blue);
-  color: white;
-  padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
+  color: var(--text-white);
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+
+  padding: 2rem;
   margin-top: 2rem;
+  background-color: var(--secondary-blue);
 }
 
-.submit-btn:hover {
-  background-color: #4a82e0;
-  transform: translateY(-2px);
-}
-
-/* Footer */
 .footer {
+  font-size: 1.8rem;
+  color: var(--text-muted-dark);
   text-align: center;
-  margin-top: 8rem;
-  color: var(--text-muted);
-  font-size: 1.2rem;
-}
-
-/* --- RESPONSIVE MEDIA QUERIES --- */
-
-@media (max-width: 768px) {
-  .section-contact {
-    padding: 8rem 5%;
-  }
-
-  .heading-secondary {
-    font-size: 4.5rem;
-  }
-
-  .contact-form {
-    grid-template-columns: 1fr; /* Stack inputs on mobile */
-    row-gap: 3rem;
-  }
-
-  .full-width {
-    grid-column: span 1;
-  }
-
-  .header-grid {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 480px) {
-  .heading-secondary {
-    font-size: 3.5rem;
-  }
+  margin-top: 5rem;
 }

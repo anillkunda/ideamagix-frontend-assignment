@@ -3,16 +3,36 @@
   color: var(--text-white);
 }
 
-.arrow-img {
-  width: 5rem;
-  height: 5rem;
-  margin-top: 2rem;
+.heading-primary {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.heading-secondary {
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.heading-tertiary {
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
 }
