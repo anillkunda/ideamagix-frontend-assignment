@@ -62,3 +62,63 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+// ----- About Stats slider (Owl Carousel)
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.about-stats-track');
+  const cards = document.querySelectorAll('.about-stat-card');
+
+  if (!track || !cards.length) return;
+
+  let index = 0;
+  let itemsToShow = 3;
+  let autoplay;
+
+  function setItems() {
+    const width = window.innerWidth;
+
+    if (width >= 1700) {
+      itemsToShow = 3;
+    } else if (width >= 1200) {
+      itemsToShow = 2;
+    } else {
+      itemsToShow = 1;
+    }
+  }
+
+  function move() {
+    const gap = 24; // 2.4rem
+    const cardWidth = cards[0].offsetWidth + gap;
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+  }
+
+  function next() {
+    index++;
+    if (index > cards.length - itemsToShow) {
+      index = 0;
+    }
+    move();
+  }
+
+  function start() {
+    stop();
+    autoplay = setInterval(next, 2500);
+  }
+
+  function stop() {
+    clearInterval(autoplay);
+  }
+
+  track.addEventListener('mouseenter', stop);
+  track.addEventListener('mouseleave', start);
+
+  window.addEventListener('resize', () => {
+    index = 0;
+    setItems();
+    move();
+  });
+
+  setItems();
+  start();
+});

@@ -390,3 +390,35 @@
     width: 90%;
   }
 }
+
+/* ----- Owl Carousel for the sliders */
+
+.about-stats {
+  overflow: hidden;
+  position: relative;
+}
+
+.about-stats-track {
+  display: flex;
+  gap: 2.4rem;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+@media (min-width: 106.25em) {
+  .about-stat-card {
+    min-width: calc((100% / 3) - 1.6rem);
+  }
+}
+
+@media (max-width: 106.24em) and (min-width: 75em) {
+  .about-stat-card {
+    min-width: calc((100% / 2) - 1.2rem);
+  }
+}
+
+@media (max-width: 74.99em) {
+  .about-stat-card {
+    min-width: 100%;
+  }
+}
